@@ -1,0 +1,26 @@
+# Plot the data (True/False)
+plot: false
+
+# Coalesce blinks
+coalesce: 0.5 # 500ms
+
+# Threshold for diameter of the pupil (in arbitrary units)
+diameter_threshold: 0
+
+# Define padding values for blinks
+blink_padding: 0.2
+saccade_padding: 0.05
+
+# Define filter parameters
+lp: 30 # low-pass frequency (-> filter fast artifacts out of the signal); above 10 Hz
+butter_order: 4 # order of the butterworth filter
+
+# Define screen parameters 
+screen_width: 600 # in mm
+screen_height: 340 # in mm
+screen_distance: 560 # in mm
+screen_resolution: [2560, 1440] # in pixels 
+distance: 31 # # distance between the fixation spots to center in pixels 
+
+# Define threshold for missing data
+missing_data_threshold: 0.3
